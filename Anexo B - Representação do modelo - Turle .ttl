@@ -1,0 +1,642 @@
+#################################################################
+###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
+#################################################################
+
+@prefix : 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 	<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: 		<http://purl.org/dc/elements/1.1/> .
+@prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
+@prefix ex: 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix wot: 		<http://xmlns.com/wot/0.1/> .
+@prefix : 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: 	<http://xmlns.com/foaf/0.1/> .
+@prefix net: 		<http://purl.org/toco/> .
+@base 			<http://example.com/CSE-CIC-IDS2018/> .
+
+<http://example.com/CSE-CIC-IDS2018/> rdf:type owl:Ontology ;
+                                      dc:title "Modelo Formal Dataset CSE-CIC-IDS2018"@en; 
+                                      dc:description "Modelo Formal do dataset de IDS CSE-CIC-IDS2018 , descrito usando o esquema W3C RDF e a Web Ontology Language."@en; 
+                                      owl:versionInfo "1.0"@en;
+                                      dc:creator "Thaisa" . 
+#################################################################
+
+###  Property Definitions (Number of Property) 30 ###
+#  --------------------------- Property 0------------------------- 
+:hasSynFlagCount rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasSynFlagCount"@IRI-based; 
+                 rdfs:label "CSE-CIC-IDS2018hasSynFlagCount_"@iri-based; 
+                 rdfs:label "hasSynFlagCount "@en; 
+                 rdfs:domain :Flow;
+                 rdfs:range rdfs:Literal . 
+#  --------------------------- Property 1------------------------- 
+:srcPort rdf:type owl:DatatypeProperty ;
+         rdfs:label "srcPort"@IRI-based; 
+         rdfs:label "srcPort"@en; 
+         rdfs:domain net:Link;
+         rdfs:range rdfs:Literal . 
+#  --------------------------- Property 2------------------------- 
+:hasFwdIatStd rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasFwdIatStd"@IRI-based; 
+              rdfs:label "hasFwdIatStd"@iri-based; 
+              rdfs:label "hasFwdIatStd"@en; 
+              rdfs:domain :Flow;
+              rdfs:range rdfs:Literal . 
+#  --------------------------- Property 3------------------------- 
+:hasTimestamp rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasTimestamp"@IRI-based; 
+              rdfs:label "hasTimestamp"@iri-based; 
+              rdfs:label "hasTimestamp"@en; 
+              rdfs:domain :Flow;
+              rdfs:range rdfs:Literal . 
+#  --------------------------- Property 4------------------------- 
+:hasFlowID rdf:type owl:DatatypeProperty ;
+           rdfs:label "hasFlowID"@IRI-based; 
+           rdfs:label "hasFlowID"@iri-based; 
+           rdfs:label "hasFlowID"@en; 
+           rdfs:domain :Flow;
+           rdfs:range rdfs:Literal . 
+#  --------------------------- Property 5------------------------- 
+:hasbwdIatTotal rdf:type owl:DatatypeProperty ;
+                rdfs:label "hasbwdIatTotal"@IRI-based; 
+                rdfs:label "hasbwdIatTotal"@iri-based; 
+                rdfs:label "hasbwdIatTotal"@en; 
+                rdfs:domain :Flow;
+                rdfs:range rdfs:Literal . 
+#  --------------------------- Property 6------------------------- 
+:hasNumBytes rdf:type owl:DatatypeProperty ;
+             rdfs:label "hasNumBytes"@IRI-based; 
+             rdfs:label "CSE-CIC-IDS2018hasNumBytes"@iri-based; 
+             rdfs:label "hasNumBytes"@en; 
+             rdfs:domain :Flow;
+             rdfs:range rdfs:Literal . 
+#  --------------------------- Property 7------------------------- 
+:hasBwdIatStd rdf:type owl:DatatypeProperty ;
+              rdfs:label "hasBwdIatStd"@IRI-based; 
+              rdfs:label "hasBwdIatStd"@iri-based; 
+              rdfs:label "hasBwdIatStd"@en; 
+              rdfs:domain :Flow;
+              rdfs:range rdfs:Literal . 
+#  --------------------------- Property 8------------------------- 
+:hasIP rdf:type owl:DatatypeProperty ;
+       rdfs:label "hasIP"@IRI-based; 
+       rdfs:label "hasIP"@iri-based; 
+       rdfs:label "hasIP"@en; 
+       rdfs:domain net:Device;
+       rdfs:range rdfs:Literal . 
+#  --------------------------- Property 9------------------------- 
+:hasAckFlagCount rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasAckFlagCount"@IRI-based; 
+                 rdfs:label "hasAckFlagCount"@iri-based; 
+                 rdfs:label "hasAckFlagCount"@en; 
+                 rdfs:domain :Flow;
+                 rdfs:range rdfs:Literal . 
+#  --------------------------- Property 10------------------------- 
+:hasFinFlagCount rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasFinFlagCount"@IRI-based; 
+                 rdfs:label "hasFinFlagCount"@iri-based; 
+                 rdfs:label "hasFinFlagCount"@en; 
+                 rdfs:domain :Flow;
+                 rdfs:range rdfs:Literal . 
+#  --------------------------- Property 11------------------------- 
+:hasLabel rdf:type owl:DatatypeProperty ;
+           rdfs:label "hasLabel"@IRI-based; 
+           rdfs:label "hasLabel"@iri-based; 
+           rdfs:label ":hasLabel"@en; 
+           rdfs:domain :Occurrence;
+           rdfs:range rdfs:Literal . 
+#  --------------------------- Property 12------------------------- 
+:hasActiveMean rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasActiveMean"@IRI-based; 
+               rdfs:label "CSE-CIC-IDS2018hasActiveMean"@iri-based; 
+               rdfs:label "hasActiveMean"@en; 
+               rdfs:domain :Flow;
+               rdfs:range rdfs:Literal . 
+#  --------------------------- Property 13------------------------- 
+:hasDuration rdf:type owl:DatatypeProperty ;
+             rdfs:label "hasDuration"@IRI-based; 
+             rdfs:label "hasDuration"@iri-based; 
+             rdfs:label "hasDuration"@en; 
+             rdfs:domain :Flow;
+             rdfs:range rdfs:Literal . 
+#  --------------------------- Property 14------------------------- 
+net:from rdf:type owl:ObjectProperty ;
+         rdfs:label "from"@IRI-based; 
+         rdfs:label "from"@iri-based; 
+         rdfs:label "from"@en; 
+         rdfs:domain net:Link;
+         rdfs:range net:Device . 
+#  --------------------------- Property 15------------------------- 
+net:to rdf:type owl:ObjectProperty ;
+       rdfs:label "to"@IRI-based; 
+       rdfs:label "to"@iri-based; 
+       rdfs:label "to"@en; 
+       rdfs:domain net:Link;
+       rdfs:range net:Device . 
+#  --------------------------- Property 16------------------------- 
+:dstPort rdf:type owl:DatatypeProperty ;
+         rdfs:label "dstPort"@IRI-based; 
+         rdfs:label "dstPort"@en; 
+         rdfs:domain net:Link;
+         rdfs:range rdfs:Literal . 
+#  --------------------------- Property 17------------------------- 
+:hasLink rdf:type owl:ObjectProperty ;
+         rdfs:label "hasLink"@IRI-based; 
+         rdfs:label "hasLink"@iri-based; 
+         rdfs:label "hasLink"@en; 
+         rdfs:domain :Flow;
+         rdfs:range net:Link . 
+#  --------------------------- Property 18------------------------- 
+:hasNumPackets rdf:type owl:DatatypeProperty ;
+               rdfs:label "hasNumPackets"@IRI-based; 
+               rdfs:label "hasNumPackets"@iri-based; 
+               rdfs:label "hasNumPackets"@en; 
+               rdfs:domain :Flow;
+               rdfs:range rdfs:Literal . 
+#  --------------------------- Property 19------------------------- 
+:hasDownUpRatio rdf:type owl:DatatypeProperty ;
+                rdfs:label "hasDownUpRatio"@IRI-based; 
+                rdfs:label "hasDownUpRatio"@iri-based; 
+                rdfs:label "hasDownUpRatio"@en; 
+                rdfs:domain :Flow;
+                rdfs:range rdfs:Literal . 
+#  --------------------------- Property 20------------------------- 
+:hasOccurrence rdf:type owl:ObjectProperty ;
+               rdfs:label "hasOccurrence"@IRI-based; 
+               rdfs:label "hasOccurrence"@iri-based; 
+               rdfs:label "hasOccurrence"@en; 
+               rdfs:domain :Flow;
+               rdfs:range :Occurrence . 
+#  --------------------------- Property 21------------------------- 
+:hasRstFlagCount rdf:type owl:DatatypeProperty ;
+                 rdfs:label "hasRstFlagCount"@IRI-based; 
+                 rdfs:label "hasRstFlagCount"@iri-based; 
+                 rdfs:label "hasRstFlagCount"@en; 
+                 rdfs:domain :Flow;
+                 rdfs:range rdfs:Literal . 
+#  --------------------------- Property 22------------------------- 
+:hasFwdIatTotal rdf:type owl:DatatypeProperty ;
+                rdfs:label "hasFwdIatTotal"@IRI-based; 
+                rdfs:label "CSE-CIC-IDS2018hasFwdIatTotal"@iri-based; 
+                rdfs:label "hasFwdIatTotal"@en; 
+                rdfs:domain :Flow;
+                rdfs:range rdfs:Literal . 
+#  --------------------------- Property 23------------------------- 
+:hasPackets rdf:type owl:ObjectProperty ;
+            rdfs:label "hasPackets"@en; 
+            rdfs:domain :Flow;
+            rdfs:range :Package . 
+#  --------------------------- Property 24------------------------- 
+:hasTotalFwdPacket rdf:type owl:DatatypeProperty ;
+                   rdfs:label "hasTotalFwdPacket"@en; 
+                   rdfs:domain :Package;
+                   rdfs:range rdfs:Literal . 
+#  --------------------------- Property 25------------------------- 
+:hasTotalBwdPackets rdf:type owl:DatatypeProperty ;
+                    rdfs:label "hasTotalBwdPackets"@en; 
+                    rdfs:domain :Package;
+                    rdfs:range rdfs:Literal . 
+#  --------------------------- Property 26------------------------- 
+:hasTotalLenFwdPacket rdf:type owl:DatatypeProperty ;
+                      rdfs:label "hasTotalLenFwdPacket"@en; 
+                      rdfs:domain :Package;
+                      rdfs:range rdfs:Literal . 
+#  --------------------------- Property 27------------------------- 
+:hasTotalLenBwdPacket rdf:type owl:DatatypeProperty ;
+                      rdfs:label "hasTotalLenBwdPacket"@en; 
+                      rdfs:domain :Package;
+                      rdfs:range rdfs:Literal . 
+#  --------------------------- Property 28------------------------- 
+:hasFwdPacketLengthStd rdf:type owl:DatatypeProperty ;
+                       rdfs:label "hasFwdPacketLengthStd"@en; 
+                       rdfs:domain :Package;
+                       rdfs:range rdfs:Literal . 
+#  --------------------------- Property 29------------------------- 
+:hasBwdPacketLenStd rdf:type owl:DatatypeProperty ;
+                    rdfs:label "hasBwdPacketLenStd"@en; 
+                    rdfs:domain :Package;
+                    rdfs:range rdfs:Literal . 
+###  Class Definitions (Number of Classes) 13 ###
+#  --------------------------- Class  0------------------------- 
+:Brute_force rdf:type owl:Class; 
+             rdfs:subClassOf :Malicious ;
+             rdfs:label "Brute_force"@IRI-based; 
+             rdfs:label "Brute_force"@iri-based; 
+             rdfs:label "rute force"@en ;
+             owl:equivalentClass <http://www.wikidata.org/entity/Q869370> .
+#  --------------------------- Class  1------------------------- 
+:Occurrence rdf:type owl:Class; 
+            rdfs:label "Occurrence"@IRI-based; 
+            rdfs:label "Occurrence"@iri-based; 
+            rdfs:label "Occurrence"@en . 
+#  --------------------------- Class  2------------------------- 
+:Malicious rdf:type owl:Class; 
+         rdfs:subClassOf :Occurrence;
+         owl:disjointWith :Benign ;
+         rdfs:label "Malicious"@IRI-based; 
+         rdfs:label "Malicious"@iri-based; 
+         rdfs:label "Malicious"@en . 
+#  --------------------------- Class  3------------------------- 
+:Flow rdf:type owl:Class; 
+       rdfs:label "Flow"@IRI-based; 
+       rdfs:label "Flow"@iri-based; 
+       rdfs:label "Flow"@en . 
+#  --------------------------- Class  4------------------------- 
+:Botnet rdf:type owl:Class; 
+        rdfs:subClassOf :Malicious ;
+        rdfs:label "Botnet"@IRI-based; 
+        rdfs:label "Botnet"@iri-based; 
+        rdfs:label "Botnet"@en ; 
+        owl:equivalentClass <http://www.wikidata.org/entity/Q317671> .
+#  --------------------------- Class  5------------------------- 
+net:Link rdf:type owl:Class; 
+         rdfs:label "Link"@IRI-based; 
+         rdfs:label "Link"@iri-based; 
+         rdfs:label "Link"@en . 
+#  --------------------------- Class  6------------------------- 
+net:Device rdf:type owl:Class; 
+           rdfs:label "Device"@IRI-based; 
+           rdfs:label "Device"@en . 
+#  --------------------------- Class  7------------------------- 
+:Ddos rdf:type owl:Class; 
+      rdfs:subClassOf :Malicious ;
+      rdfs:label "Ddos"@IRI-based; 
+      rdfs:label "Ddos"@iri-based; 
+      owl:equivalentClass <http://www.wikidata.org/entity/Q17329819> ;
+      rdfs:label "Ddos"@en . 
+#  --------------------------- Class  8------------------------- 
+:Web_attack rdf:type owl:Class; 
+            rdfs:subClassOf :Malicious ;
+            rdfs:label "Web_attack"@IRI-based; 
+            rdfs:label "Web_attack"@iri-based; 
+            rdfs:label "Web attack"@en ;
+            owl:equivalentClass <https://www.wikidata.org/entity/Q4230100> .
+#  --------------------------- Class  9------------------------- 
+:Benign rdf:type owl:Class; 
+         rdfs:subClassOf :Occurrence;
+         rdfs:label "Benign"@IRI-based; 
+         rdfs:label "Benign"@iri-based; 
+         rdfs:label "Benign"@en . 
+#  --------------------------- Class  10------------------------- 
+:Infiltration rdf:type owl:Class; 
+              rdfs:subClassOf :Malicious ;
+              rdfs:label "Infiltration"@IRI-based; 
+              rdfs:label "Infiltration"@iri-based; 
+              rdfs:label "Infiltration"@en . 
+#  --------------------------- Class  11------------------------- 
+:Dos rdf:type owl:Class; 
+     rdfs:subClassOf :Malicious ;
+     rdfs:label "Dos"@IRI-based; 
+     rdfs:label "Dos"@iri-based; 
+     rdfs:label "Dos"@en ;
+     owl:equivalentClass <https://www.wikidata.org/entity/Q131406> .
+
+#  --------------------------- Class  12------------------------- 
+:Package rdf:type owl:Class; 
+        rdfs:label "Package"@en . 
+
+###################################### Instanciçação  ##################################################
+
+# -------------------------------------------- Benign 1 # ----------------------------------#
+ 
+ <http://example.com/CSE-CIC-IDS2018/package_1> rdf:type :Package ;
+                                               ex:hasTotalFwdPacket "1" ;
+                                               ex:hasTotalBwdPackets "1" ;
+                                               ex:hasTotalLenFwdPacket "300" ;
+                                               ex:hasTotalLenBwdPacket "329" ;
+                                               ex:hasFwdPacketLengthStd "0" ;
+                                               ex:hasBwdPacketLenStd "0" .
+
+<http://example.com/CSE-CIC-IDS2018/device_1> rdf:type net:Device ;
+                                                     ex:hasIP "172.31.69.25" .
+
+<http://example.com/CSE-CIC-IDS2018/device_2> rdf:type net:Device ;
+                                                     ex:hasIP "172.31.69.1" .
+
+<http://example.com/CSE-CIC-IDS2018/link_1> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_2> ;
+                                            ex:srcPort "68" ;
+                                            ex:dstPort "67" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_1> rdf:type ex:Benign ;
+                                                  ex:hasLabel "Benign" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_1> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.1-172.31.69.25-67-68-17" ;
+                                           ex:hasTimestamp "20/02/2018 08:50:51" ;
+                                           ex:hasDuration "716" ;
+                                           ex:hasNumBytes "878491.6201" ;
+                                           ex:hasNumPackets "2793.296089" ;
+                                           ex:hasFwdIatTotal "0" ;
+                                           ex:hasbwdIatTotal "0" ;
+                                           ex:hasFwdIatStd "0" ;
+                                           ex:hasBwdIatStd "0" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "0" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_1> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_1> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_1> .
+
+
+# ----------------------------------  Benign 2 # --------------------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_2> rdf:type :Package ;
+                                               ex:hasTotalFwdPacket "3" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "384" ;
+                                               ex:hasTotalLenBwdPacket "64" ;
+                                               ex:hasFwdPacketLengthStd "64" ;
+                                               ex:hasBwdPacketLenStd "32" .                                                  
+
+<http://example.com/CSE-CIC-IDS2018/device_3> rdf:type net:Device ;
+                                                     ex:hasIP "131.202.242.193" .
+
+<http://example.com/CSE-CIC-IDS2018/link_2> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_3> ;
+                                            ex:srcPort "22" ;
+                                            ex:dstPort "6407" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_2> rdf:type ex:Benign ;
+                                                  ex:hasLabel "Benign" .                                            
+
+<http://example.com/CSE-CIC-IDS2018/flow_2> rdf:type :Flow; 
+                                             ex:hasFlowID "131.202.242.193-172.31.69.25-6407-22-6" ;
+                                             ex:hasTimestamp "20/02/2018 08:32:55" ;
+                                             ex:hasDuration "18687656" ;
+                                             ex:hasNumBytes "239.7305172" ;
+                                             ex:hasNumPackets "3.745789331" ;
+                                             ex:hasFwdIatTotal "1785235" ;
+                                             ex:hasbwdIatTotal "1825575" ;
+                                             ex:hasFwdIatStd "1262242.88" ;
+                                             ex:hasBwdIatStd "946672.0312" ;
+                                             ex:hasFinFlagCount "0" ;
+                                             ex:hasSynFlagCount "1" ;
+                                             ex:hasRstFlagCount "0" ;
+                                             ex:hasAckFlagCount "1" ;
+                                             ex:hasDownUpRatio "1" ;
+                                             ex:hasActiveMean "0" ;
+                                             ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_2> ;
+                                             ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_2> ;
+                                             ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_2> . 
+                                     
+
+# ----------------------------------  Benign 3 # ----------------------------------#
+ 
+ <http://example.com/CSE-CIC-IDS2018/package_3> rdf:type :Package ;
+                                               ex:hasTotalFwdPacket "4" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "289" ;
+                                               ex:hasTotalLenBwdPacket "972" ;
+                                               ex:hasFwdPacketLengthStd "144.5" ;
+                                               ex:hasBwdPacketLenStd "486" .
+
+<http://example.com/CSE-CIC-IDS2018/device_4> rdf:type net:Device ;
+                                                     ex:hasIP "60.191.38.77" .
+
+<http://example.com/CSE-CIC-IDS2018/link_3> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_4> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "42946" ;
+                                            ex:dstPort "80" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_3> rdf:type ex:Benign ;
+                                                  ex:hasLabel "Benign" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_3> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-60.191.38.77-80-42946-6" ;
+                                           ex:hasTimestamp "20/02/2018 09:29:47" ;
+                                           ex:hasDuration "5222759" ;
+                                           ex:hasNumBytes "241.4432678" ;
+                                           ex:hasNumPackets "1.531757449" ;
+                                           ex:hasFwdIatTotal "431771" ;
+                                           ex:hasbwdIatTotal "5222735" ;
+                                           ex:hasFwdIatStd "124618683" ;
+                                           ex:hasBwdIatStd "2829383229" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "0" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_3> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_3> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_3> .
+                                                    
+# ---------------------------------- Benign 4 # ----------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_4> rdf:type :Package ;
+                                               ex:hasTotalFwdPacket "12" ;
+                                               ex:hasTotalBwdPackets "11" ;
+                                               ex:hasTotalLenFwdPacket "300" ;
+                                               ex:hasTotalLenBwdPacket "329" ;
+                                               ex:hasFwdPacketLengthStd "0" ;
+                                               ex:hasBwdPacketLenStd "0" .
+
+<http://example.com/CSE-CIC-IDS2018/device_5> rdf:type net:Device ;
+                                                     ex:hasIP "221.194.47.239" .
+
+<http://example.com/CSE-CIC-IDS2018/link_4> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_5> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "51914" ;
+                                            ex:dstPort "8220" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_4> rdf:type ex:Benign ;
+                                                  ex:hasLabel "Benign" .                                            
+
+<http://example.com/CSE-CIC-IDS2018/flow_4> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-221.194.47.239-22-51914-6" ;
+                                           ex:hasTimestamp "20/02/2018 09:48:07" ;
+                                           ex:hasDuration "3641654" ;
+                                           ex:hasNumBytes "849.0647382" ;
+                                           ex:hasNumPackets "6.315811442" ;
+                                           ex:hasFwdIatTotal "3641654" ;
+                                           ex:hasbwdIatTotal "3062380" ;
+                                           ex:hasFwdIatStd "256430.6663" ;
+                                           ex:hasBwdIatStd "254770.6873" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "0" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "0" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_4> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_4> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_4> .
+
+# ---------------------------------- Malicious - DDoS 1 # ----------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_5> ex:hasTotalFwdPacket "3" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "20" ;
+                                               ex:hasTotalLenBwdPacket "964" ;
+                                               ex:hasFwdPacketLengthStd "11.54700538" ;
+                                               ex:hasBwdPacketLenStd "482" .
+
+<http://example.com/CSE-CIC-IDS2018/device_6> rdf:type net:Device ;
+                                                     ex:hasIP "52.14.136.135" .                                            
+
+<http://example.com/CSE-CIC-IDS2018/link_5> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_6> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "50819" ;
+                                            ex:dstPort "80" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_5> rdf:type ex:Ddos ;
+                                                  ex:hasLabel "DDoS" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_5> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-52.14.136.135-80-50819-6" ;
+                                           ex:hasTimestamp "20/02/2018 10:13:54" ;
+                                           ex:hasDuration "3904" ;
+                                           ex:hasNumBytes "252049.1803" ;
+                                           ex:hasNumPackets "1793.032787" ;
+                                           ex:hasFwdIatTotal "3310" ;
+                                           ex:hasbwdIatTotal "3877" ;
+                                           ex:hasFwdIatStd "1813.021787" ;
+                                           ex:hasBwdIatStd "1762.430802" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "1" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_5> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_5> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_5> .
+
+# ---------------------------------- Malicious - DDoS 2 # ----------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_6> ex:hasTotalFwdPacket "3" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "20" ;
+                                               ex:hasTotalLenBwdPacket "964" ;
+                                               ex:hasFwdPacketLengthStd "11.54700538" ;
+                                               ex:hasBwdPacketLenStd "482" .
+
+<http://example.com/CSE-CIC-IDS2018/link_6> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_6> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "50820" ;
+                                            ex:dstPort  "80" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_6> rdf:type ex:Ddos ;
+                                                  ex:hasLabel "DDoS" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_6> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-52.14.136.135-80-50820-6" ;
+                                           ex:hasTimestamp "20/02/2018 10:13:54" ;
+                                           ex:hasDuration "762" ;
+                                           ex:hasNumBytes "1291338583" ;
+                                           ex:hasNumPackets "9186.351706" ;
+                                           ex:hasFwdIatTotal "336" ;
+                                           ex:hasbwdIatTotal "754" ;
+                                           ex:hasFwdIatStd "234.7594514" ;
+                                           ex:hasBwdIatStd "191.719413" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "1" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_6> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_6> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_6> .
+
+# ---------------------------------- Malicious - DDoS 3 # ----------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_7> ex:hasTotalFwdPacket "3" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "20" ;
+                                               ex:hasTotalLenBwdPacket "964" ;
+                                               ex:hasFwdPacketLengthStd "11.54700538" ;
+                                               ex:hasBwdPacketLenStd "482" .
+
+<http://example.com/CSE-CIC-IDS2018/link_7> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_6> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "50821" ; 
+                                            ex:dstPort "80" .
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_7> rdf:type ex:Ddos ;
+                                                  ex:hasLabel "DDoS" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_7> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-52.14.136.135-80-50822-6" ;
+                                           ex:hasTimestamp "20/02/2018 10:13:54" ;
+                                           ex:hasDuration "726" ;
+                                           ex:hasNumBytes "1355371901" ;
+                                           ex:hasNumPackets "9641.873278" ;
+                                           ex:hasFwdIatTotal "317" ;
+                                           ex:hasbwdIatTotal "754" ;
+                                           ex:hasFwdIatStd "234.7594514" ;
+                                           ex:hasBwdIatStd "191.719413" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "1" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_7> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_7> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_7> .
+
+
+# ----------------------------------  Malicious - DDoS 4 # ----------------------------------#
+
+ <http://example.com/CSE-CIC-IDS2018/package_8> ex:hasTotalFwdPacket "3" ;
+                                               ex:hasTotalBwdPackets "4" ;
+                                               ex:hasTotalLenFwdPacket "20" ;
+                                               ex:hasTotalLenBwdPacket "964" ;
+                                               ex:hasFwdPacketLengthStd "11.54700538" ;
+                                               ex:hasBwdPacketLenStd "482" .
+
+<http://example.com/CSE-CIC-IDS2018/link_8> rdf:type net:Link ;
+                                            net:from <http://example.com/CSE-CIC-IDS2018/device_6> ;
+                                            net:to <http://example.com/CSE-CIC-IDS2018/device_1> ;
+                                            ex:srcPort "50822" ;
+                                            ex:dstPort "80" . 
+
+<http://example.com/CSE-CIC-IDS2018/occurrence_8> rdf:type ex:Ddos ;
+                                                  ex:hasLabel "DDoS" .
+
+<http://example.com/CSE-CIC-IDS2018/flow_8> rdf:type :Flow; 
+                                           ex:hasFlowID "172.31.69.25-52.14.136.135-80-50822-6" ;
+                                           ex:hasTimestamp "20/02/2018 10:13:54" ;
+                                           ex:hasDuration "556" ;
+                                           ex:hasNumBytes "1769784173" ;
+                                           ex:hasNumPackets "12589.92806" ;
+                                           ex:hasFwdIatTotal "301" ;
+                                           ex:hasbwdIatTotal "549" ;
+                                           ex:hasFwdIatStd "210.010714" ;
+                                           ex:hasBwdIatStd "141.5874288" ;
+                                           ex:hasFinFlagCount "0" ;
+                                           ex:hasSynFlagCount "0" ;
+                                           ex:hasRstFlagCount "1" ;
+                                           ex:hasAckFlagCount "0" ;
+                                           ex:hasDownUpRatio "1" ;
+                                           ex:hasActiveMean "0" ;
+                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/package_8> ;
+                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_8> ;
+                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/occurrence_8> .
+ 
+                                
+                                           
+
+
+
+
+                                          
+                                           
+                  
+
+
