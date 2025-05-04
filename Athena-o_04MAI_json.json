@@ -1,0 +1,1005 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en",
+      "iri-based"
+    ],
+    "baseIris": [
+      "http://visualdataweb.org/newOntology",
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "https://ontology.unifiedcyberontology.org/uco/observable",
+      "https://csrc.nist.gov/glossary/term",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://purl.org/toco",
+      "http://purl.org/dc/terms",
+      "http://www.w3.org/2001/XMLSchema",
+      "https://www.w3.org/ns/dcat"
+    ],
+    "prefixList": {
+      "nist": "https://csrc.nist.gov/glossary/term/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "at": "http://visualdataweb.org/newOntology/",
+      "dcat": "https://www.w3.org/ns/dcat#",
+      "dcterms": "http://purl.org/dc/terms/",
+      "wot": "http://xmlns.com/wot/0.1/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "net": "http://purl.org/toco/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "uco": "https://ontology.unifiedcyberontology.org/uco/observable/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "": "http://visualdataweb.org/newOntology/",
+      "dc": "http://purl.org/dc/elements/1.1/",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "vs": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+      "foaf": "http://xmlns.com/foaf/0.1/"
+    },
+    "title": {
+      "en": "Athena-o"
+    },
+    "iri": "http://visualdataweb.org/newOntology/",
+    "version": "1.0",
+    "author": [
+      "Thaisa Hernandez"
+    ],
+    "description": {
+      "en": "Lightweight ontology to describe cybersecurity datasets"
+    },
+    "other": {
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Thaisa Hernandez",
+          "type": "label"
+        }
+      ],
+      "versionInfo": [
+        {
+          "identifier": "versionInfo",
+          "language": "en",
+          "value": "1.0",
+          "type": "label"
+        }
+      ],
+      "title": [
+        {
+          "identifier": "title",
+          "language": "en",
+          "value": "Athena-o",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.51",
+      "translation": [
+        340.52,
+        161.21
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "0",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "9",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "10",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "20",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "5",
+      "type": "owl:Class"
+    },
+    {
+      "id": "21",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "3",
+      "type": "owl:Class"
+    },
+    {
+      "id": "29",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "33",
+      "type": "owl:Class"
+    },
+    {
+      "id": "NodeId21",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId22",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId23",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId24",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "NodeId25",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "Class27",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "0",
+      "iri": "http://visualdataweb.org/newOntology/CybersecurityDatasets",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "CybersecurityDatasets",
+        "en": "Network Intrusion Detection Dataset"
+      },
+      "pos": [
+        681.05,
+        253.73
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://visualdataweb.org/newOntology/AttackTraffic",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "AttackTraffic",
+        "iri-based": "AttackTraffic",
+        "en": "AttackTraffic"
+      },
+      "pos": [
+        -90.05,
+        -8.91
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        576.35,
+        -19.42
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        467.83,
+        416.52
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        851.27,
+        13.36
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.w3.org/2001/XMLSchema#string",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "string"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        931.37,
+        137.03
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://visualdataweb.org/newOntology/DataVolume",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "DataVolume",
+        "en": "Data Volume"
+      },
+      "pos": [
+        568.78,
+        704.43
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://visualdataweb.org/newOntology/NormalTraffic",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "NormalTraffic",
+        "iri-based": "NormalTraffic",
+        "en": "NormalTraffic"
+      },
+      "pos": [
+        -86.92,
+        492.5
+      ]
+    },
+    {
+      "id": "20",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        354.77,
+        846.98
+      ]
+    },
+    {
+      "id": "5",
+      "iri": "http://purl.org/toco/PhysicalInfrastructure",
+      "baseIri": "http://purl.org/toco",
+      "label": "Network Configure",
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1135.2,
+        302.32
+      ]
+    },
+    {
+      "id": "21",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        781.45,
+        516.67
+      ]
+    },
+    {
+      "id": "15",
+      "iri": "https://www.w3.org/ns/dcat#Dataset",
+      "baseIri": "https://www.w3.org/ns/dcat",
+      "label": {
+        "IRI-based": "Dataset",
+        "iri-based": "Dataset",
+        "en": "Dataset"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        744.3,
+        -542.05
+      ]
+    },
+    {
+      "id": "24",
+      "iri": "https://csrc.nist.gov/glossary/term/attack",
+      "baseIri": "https://csrc.nist.gov/glossary/term",
+      "label": {
+        "IRI-based": "attack",
+        "iri-based": "attack",
+        "en": "AttackType"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -144.24,
+        -348.65
+      ]
+    },
+    {
+      "id": "3",
+      "iri": "https://ontology.unifiedcyberontology.org/uco/observable/NetworkFlow",
+      "baseIri": "https://ontology.unifiedcyberontology.org/uco/observable",
+      "label": {
+        "IRI-based": "NetworkFlow",
+        "iri-based": "NetworkFlow",
+        "en": "NetworkTraffic"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        198.23,
+        242.14
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://purl.org/dc/terms/MediaTypeOrExtent",
+      "baseIri": "http://purl.org/dc/terms",
+      "label": {
+        "IRI-based": "MediaTypeOrExtent",
+        "en": "MediaTypeOrExtent"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        970.66,
+        528.05
+      ]
+    },
+    {
+      "id": "1",
+      "iri": "http://visualdataweb.org/newOntology/NetworkIntrusionDetection_Dataset",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "NetworkIntrusionDetection_Dataset",
+        "en": "Cybersecurity Dataset"
+      },
+      "attributes": [
+        "deprecated"
+      ],
+      "pos": [
+        734.24,
+        -184.52
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://purl.org/dc/terms/PeriodOfTime",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "dcterms:PeriodOfTime",
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        578.77,
+        1090.22
+      ]
+    },
+    {
+      "id": "NodeId21",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "pos": [
+        781.66,
+        1225.52
+      ]
+    },
+    {
+      "id": "NodeId22",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        408.22,
+        1266.18
+      ]
+    },
+    {
+      "id": "NodeId23",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        458.16,
+        85.94
+      ]
+    },
+    {
+      "id": "NodeId24",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        -55.09,
+        261.6
+      ]
+    },
+    {
+      "id": "NodeId25",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ],
+      "pos": [
+        1362.69,
+        190.03
+      ]
+    },
+    {
+      "id": "Class27",
+      "iri": "http://purl.org/toco/Devices",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Devices",
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        1443.65,
+        498.31
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "4",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "7",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "14",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "16",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "17",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "18",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "22",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "23",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "25",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "26",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "28",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "31",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "35",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "36",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "datatypeProperty18",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty19",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty20",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty21",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "datatypeProperty22",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "objectProperty24",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "4",
+      "iri": "http://visualdataweb.org/newOntology/hasCompleteNetwork",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "hasNetworkConfigure",
+      "domain": "0",
+      "range": "5",
+      "pos": [
+        908.13,
+        278.02
+      ]
+    },
+    {
+      "id": "7",
+      "iri": "http://visualdataweb.org/newOntology/hasDataVolume",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasDataVolume",
+        "en": "hasDataVolume"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "0",
+      "range": "8",
+      "pos": [
+        624.92,
+        479.08
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "15",
+      "pos": [
+        739.27,
+        -363.29
+      ]
+    },
+    {
+      "id": "16",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "3",
+      "pos": [
+        54.09,
+        116.61
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "https://csrc.nist.gov/glossary/term/anonymity",
+      "baseIri": "https://csrc.nist.gov/glossary/term",
+      "label": {
+        "IRI-based": "anonymity",
+        "iri-based": "anonymity",
+        "en": "Anonymity"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "0",
+      "range": "9",
+      "pos": [
+        561.12,
+        345.29
+      ]
+    },
+    {
+      "id": "18",
+      "iri": "http://visualdataweb.org/newOntology/hasTraffic",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasTraffic",
+        "iri-based": "hasTraffic",
+        "en": "hasTraffic"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "0",
+      "range": "3",
+      "pos": [
+        439.64,
+        247.93
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "https://www.w3.org/ns/dcat#byteSize",
+      "baseIri": "https://www.w3.org/ns/dcat",
+      "label": {
+        "IRI-based": "byteSize",
+        "en": "dcat:byteSize"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "8",
+      "range": "20",
+      "pos": [
+        448.48,
+        784.56
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://visualdataweb.org/newOntology/isbalanced",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "isbalanced",
+        "iri-based": "isbalanced",
+        "en": "isbalanced"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "0",
+      "range": "21",
+      "pos": [
+        738.26,
+        403.55
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "https://csrc.nist.gov/glossary/term/availability",
+      "baseIri": "https://csrc.nist.gov/glossary/term",
+      "label": {
+        "IRI-based": "availability",
+        "iri-based": "availability",
+        "en": "hasPublicAvailability"
+      },
+      "attributes": [
+        "external",
+        "datatype"
+      ],
+      "domain": "0",
+      "range": "10",
+      "pos": [
+        777.07,
+        118.14
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://visualdataweb.org/newOntology/hasLabel",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasLabel",
+        "iri-based": "hasLabel",
+        "en": "hasLabel"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "0",
+      "range": "11",
+      "pos": [
+        818.14,
+        189.81
+      ]
+    },
+    {
+      "id": "28",
+      "iri": "http://purl.org/dc/terms/format",
+      "baseIri": "http://purl.org/dc/terms",
+      "label": {
+        "IRI-based": "format",
+        "en": "Format"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "domain": "0",
+      "range": "29",
+      "pos": [
+        825.85,
+        390.89
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "http://visualdataweb.org/newOntology/hasAttackType",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasAttackType",
+        "en": "hasAttackType"
+      },
+      "attributes": [
+        "object"
+      ],
+      "domain": "2",
+      "range": "24",
+      "pos": [
+        -117.15,
+        -178.78
+      ]
+    },
+    {
+      "id": "31",
+      "iri": "http://visualdataweb.org/newOntology/hasPredefinedSplits",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": {
+        "IRI-based": "hasPredefinedSplits",
+        "iri-based": "hasPredefinedSplits",
+        "en": "hasPredefinedSplits"
+      },
+      "attributes": [
+        "datatype"
+      ],
+      "domain": "0",
+      "range": "6",
+      "pos": [
+        621.67,
+        98.81
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "http://visualdataweb.org/newOntology/hasDuration",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "hasDuration",
+      "domain": "8",
+      "range": "33",
+      "pos": [
+        573.78,
+        897.32
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "3",
+      "pos": [
+        55.66,
+        367.32
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema#",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "0",
+      "range": "1",
+      "pos": [
+        707.65,
+        34.6
+      ]
+    },
+    {
+      "id": "datatypeProperty18",
+      "iri": "http://visualdataweb.org/newOntology/:dcat:startDate",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "dcat:startDate",
+      "domain": "33",
+      "range": "NodeId21",
+      "pos": [
+        693.52,
+        1166.74
+      ]
+    },
+    {
+      "id": "datatypeProperty19",
+      "iri": "https://www.w3.org/ns/dcat#endDate",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "dcat:endDate",
+      "attributes": [
+        "external"
+      ],
+      "domain": "33",
+      "range": "NodeId22",
+      "pos": [
+        480.94,
+        1191.15
+      ]
+    },
+    {
+      "id": "datatypeProperty20",
+      "iri": "https://www.w3.org/TR/owl-time/#timeyear",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Year Of Traffic Creation",
+      "attributes": [
+        "external"
+      ],
+      "domain": "0",
+      "range": "NodeId23",
+      "pos": [
+        556.28,
+        159.8
+      ]
+    },
+    {
+      "id": "datatypeProperty21",
+      "iri": "http://visualdataweb.org/newOntology/KindofTraffic",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Kind of Traffic",
+      "domain": "3",
+      "range": "NodeId24",
+      "pos": [
+        59.89,
+        252.76
+      ]
+    },
+    {
+      "id": "datatypeProperty22",
+      "iri": "http://visualdataweb.org/newOntology/Type_of_Network",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Type of Network",
+      "domain": "5",
+      "range": "NodeId25",
+      "pos": [
+        1261.24,
+        240.11
+      ]
+    },
+    {
+      "id": "objectProperty24",
+      "iri": "http://visualdataweb.org/newOntology/hasDevices",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "hasDevices",
+      "domain": "5",
+      "range": "Class27",
+      "pos": [
+        1289.43,
+        400.31
+      ]
+    }
+  ]
+}
