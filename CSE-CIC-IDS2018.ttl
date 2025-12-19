@@ -2,22 +2,22 @@
 ###  Generated with the experimental alpha version of the TTL exporter of WebVOWL (version 1.1.7)  http://visualdataweb.de/webvowl/   ###
 #################################################################
 
-@prefix : 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix : 		<http://purl.org/CSE-CIC-IDS2018/> .
 @prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: 		<http://www.w3.org/2002/07/owl#> .
 @prefix xsd: 		<http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: 		<http://purl.org/dc/elements/1.1/> .
 @prefix xml: 		<http://www.w3.org/XML/1998/namespace> .
-@prefix ex: 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix ex: 		<http://purl.org/CSE-CIC-IDS2018/> .
 @prefix wot: 		<http://xmlns.com/wot/0.1/> .
-@prefix : 		<http://example.com/CSE-CIC-IDS2018/> .
+@prefix : 		<http://purl.org/CSE-CIC-IDS2018/> .
 @prefix vs: 		<http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix foaf: 		<http://xmlns.com/foaf/0.1/> .
 @prefix net: 		<http://purl.org/toco/> .
-@base 			<http://example.com/CSE-CIC-IDS2018/> .
+@base 			<http://purl.org/CSE-CIC-IDS2018/> .
 
-<http://example.com/CSE-CIC-IDS2018/> rdf:type owl:Ontology ;
+<http://purl.org/CSE-CIC-IDS2018/> rdf:type owl:Ontology ;
                                       dc:title "Modelo Formal Dataset CSE-CIC-IDS2018"@en; 
                                       dc:description "Modelo Formal do dataset de IDS CSE-CIC-IDS2018 , descrito usando o esquema W3C RDF e a Web Ontology Language."@en; 
                                       owl:versionInfo "1.0"@en;
@@ -306,7 +306,7 @@ net:Device rdf:type owl:Class;
 
 # -------------------------------------------- Benigna 1 # ----------------------------------#
  
- <http://example.com/CSE-CIC-IDS2018/pacote_1> rdf:type :pacote ;
+ <http:/purl.org/CSE-CIC-IDS2018/pacote_1> rdf:type :pacote ;
                                                ex:hasTotalFwdPacket "1" ;
                                                ex:hasTotalBwdPackets "1" ;
                                                ex:hasTotalLenFwdPacket "300" ;
@@ -314,22 +314,22 @@ net:Device rdf:type owl:Class;
                                                ex:hasFwdPacketLengthStd "0" ;
                                                ex:hasBwdPacketLenStd "0" .
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_1> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_1> rdf:type net:Device ;
                                                      ex:hasIP "172.31.69.25" .
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_2> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_2> rdf:type net:Device ;
                                                      ex:hasIP "172.31.69.1" .
 
-<http://example.com/CSE-CIC-IDS2018/link_1> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_2> ;
+<http://purl.org/CSE-CIC-IDS2018/link_1> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_2> ;
                                             ex:srcPort "68" ;
                                             ex:dstPort "67" .
 
-<http://example.com/CSE-CIC-IDS2018/ocorrencia_benigna> rdf:type ex:benigno ;
+<http://purl.org/CSE-CIC-IDS2018/ocorrencia_benigna> rdf:type ex:benigno ;
                                                   ex:hasRotulo "benigno" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_1> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_1> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.1-172.31.69.25-67-68-17" ;
                                            ex:hasTimestamp "20/02/2018 08:50:51" ;
                                            ex:hasDuration "716" ;
@@ -345,14 +345,14 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_1> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_1> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_benigna> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_1> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_1> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_benigna> .
 
 
 # ----------------------------------  Benigna 2 # --------------------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_2> rdf:type :pacote ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_2> rdf:type :pacote ;
                                                ex:hasTotalFwdPacket "3" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "384" ;
@@ -360,16 +360,16 @@ net:Device rdf:type owl:Class;
                                                ex:hasFwdPacketLengthStd "64" ;
                                                ex:hasBwdPacketLenStd "32" .                                                  
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_3> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_3> rdf:type net:Device ;
                                                      ex:hasIP "131.202.242.193" .
 
-<http://example.com/CSE-CIC-IDS2018/link_2> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_3> ;
+<http://purl.org/CSE-CIC-IDS2018/link_2> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_3> ;
                                             ex:srcPort "22" ;
                                             ex:dstPort "6407" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_2> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_2> rdf:type :fluxo; 
                                              ex:hasFlowID "131.202.242.193-172.31.69.25-6407-22-6" ;
                                              ex:hasTimestamp "20/02/2018 08:32:55" ;
                                              ex:hasDuration "18687656" ;
@@ -385,14 +385,14 @@ net:Device rdf:type owl:Class;
                                              ex:hasAckFlagCount "1" ;
                                              ex:hasDownUpRatio "1" ;
                                              ex:hasActiveMean "0" ;
-                                             ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_2> ;
-                                             ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_2> ;
-                                             ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_benigna> . 
+                                             ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_2> ;
+                                             ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_2> ;
+                                             ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_benigna> . 
                                      
 
 # ----------------------------------  Benigna 3 # ----------------------------------#
  
- <http://example.com/CSE-CIC-IDS2018/pacote_3> rdf:type :pacote ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_3> rdf:type :pacote ;
                                                ex:hasTotalFwdPacket "4" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "289" ;
@@ -400,16 +400,16 @@ net:Device rdf:type owl:Class;
                                                ex:hasFwdPacketLengthStd "144.5" ;
                                                ex:hasBwdPacketLenStd "486" .
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_4> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_4> rdf:type net:Device ;
                                                      ex:hasIP "60.191.38.77" .
 
-<http://example.com/CSE-CIC-IDS2018/link_3> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_4> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_3> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_4> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "42946" ;
                                             ex:dstPort "80" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_3> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_3> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-60.191.38.77-80-42946-6" ;
                                            ex:hasTimestamp "20/02/2018 09:29:47" ;
                                            ex:hasDuration "5222759" ;
@@ -425,13 +425,13 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_3> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_3> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_benigna> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_3> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_3> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_benigna> .
                                                     
 # ---------------------------------- Benigna 4 # ----------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_4> rdf:type :pacote ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_4> rdf:type :pacote ;
                                                ex:hasTotalFwdPacket "12" ;
                                                ex:hasTotalBwdPackets "11" ;
                                                ex:hasTotalLenFwdPacket "300" ;
@@ -439,16 +439,16 @@ net:Device rdf:type owl:Class;
                                                ex:hasFwdPacketLengthStd "0" ;
                                                ex:hasBwdPacketLenStd "0" .
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_5> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_5> rdf:type net:Device ;
                                                      ex:hasIP "221.194.47.239" .
 
-<http://example.com/CSE-CIC-IDS2018/link_4> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_5> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_4> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_5> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "51914" ;
                                             ex:dstPort "8220" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_4> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_4> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-221.194.47.239-22-51914-6" ;
                                            ex:hasTimestamp "20/02/2018 09:48:07" ;
                                            ex:hasDuration "3641654" ;
@@ -464,32 +464,32 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "0" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_4> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_4> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_benigna> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_4> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_4> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_benigna> .
 
 # ---------------------------------- Maligna - DDoS 1 # ----------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_5> ex:hasTotalFwdPacket "3" ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_5> ex:hasTotalFwdPacket "3" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "20" ;
                                                ex:hasTotalLenBwdPacket "964" ;
                                                ex:hasFwdPacketLengthStd "11.54700538" ;
                                                ex:hasBwdPacketLenStd "482" .
 
-<http://example.com/CSE-CIC-IDS2018/dispositivo_6> rdf:type net:Device ;
+<http://purl.org/CSE-CIC-IDS2018/dispositivo_6> rdf:type net:Device ;
                                                      ex:hasIP "52.14.136.135" .                                            
 
-<http://example.com/CSE-CIC-IDS2018/link_5> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_6> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_5> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_6> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "50819" ;
                                             ex:dstPort "80" .
 
-<http://example.com/CSE-CIC-IDS2018/ocorrencia_ddos> rdf:type ex:ddos ;
+<http://purl.org/CSE-CIC-IDS2018/ocorrencia_ddos> rdf:type ex:ddos ;
                                                   ex:hasRotulo "DDoS" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_5> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_5> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-52.14.136.135-80-50819-6" ;
                                            ex:hasTimestamp "20/02/2018 10:13:54" ;
                                            ex:hasDuration "3904" ;
@@ -505,29 +505,29 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_5> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_5> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_ddos> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_5> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_5> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_ddos> .
 
 # ---------------------------------- Maligna - DDoS 2 # ----------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_6> ex:hasTotalFwdPacket "3" ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_6> ex:hasTotalFwdPacket "3" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "20" ;
                                                ex:hasTotalLenBwdPacket "964" ;
                                                ex:hasFwdPacketLengthStd "11.54700538" ;
                                                ex:hasBwdPacketLenStd "482" .
 
-<http://example.com/CSE-CIC-IDS2018/link_6> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_6> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_6> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_6> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "50820" ;
                                             ex:dstPort  "80" .
 
-<http://example.com/CSE-CIC-IDS2018/ocorrencia_6> rdf:type ex:ddos ;
+<http://purl.org/CSE-CIC-IDS2018/ocorrencia_6> rdf:type ex:ddos ;
                                                   ex:hasRotulo "DDoS" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_6> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_6> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-52.14.136.135-80-50820-6" ;
                                            ex:hasTimestamp "20/02/2018 10:13:54" ;
                                            ex:hasDuration "762" ;
@@ -543,26 +543,26 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_6> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_6> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_ddos> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_6> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_6> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_ddos> .
 
 # ---------------------------------- Maligna - DDoS 3 # ----------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_7> ex:hasTotalFwdPacket "3" ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_7> ex:hasTotalFwdPacket "3" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "20" ;
                                                ex:hasTotalLenBwdPacket "964" ;
                                                ex:hasFwdPacketLengthStd "11.54700538" ;
                                                ex:hasBwdPacketLenStd "482" .
 
-<http://example.com/CSE-CIC-IDS2018/link_7> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_6> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_7> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_6> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "50821" ; 
                                             ex:dstPort "80" .
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_7> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_7> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-52.14.136.135-80-50822-6" ;
                                            ex:hasTimestamp "20/02/2018 10:13:54" ;
                                            ex:hasDuration "726" ;
@@ -578,27 +578,27 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_7> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_7> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_ddos> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_7> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_7> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_ddos> .
 
 
 # ----------------------------------  Maligna - DDoS 4 # ----------------------------------#
 
- <http://example.com/CSE-CIC-IDS2018/pacote_8> ex:hasTotalFwdPacket "3" ;
+ <http://purl.org/CSE-CIC-IDS2018/pacote_8> ex:hasTotalFwdPacket "3" ;
                                                ex:hasTotalBwdPackets "4" ;
                                                ex:hasTotalLenFwdPacket "20" ;
                                                ex:hasTotalLenBwdPacket "964" ;
                                                ex:hasFwdPacketLengthStd "11.54700538" ;
                                                ex:hasBwdPacketLenStd "482" .
 
-<http://example.com/CSE-CIC-IDS2018/link_8> rdf:type net:Link ;
-                                            net:from <http://example.com/CSE-CIC-IDS2018/dispositivo_6> ;
-                                            net:to <http://example.com/CSE-CIC-IDS2018/dispositivo_1> ;
+<http://purl.org/CSE-CIC-IDS2018/link_8> rdf:type net:Link ;
+                                            net:from <http://purl.org/CSE-CIC-IDS2018/dispositivo_6> ;
+                                            net:to <http://purl.org/CSE-CIC-IDS2018/dispositivo_1> ;
                                             ex:srcPort "50822" ;
                                             ex:dstPort "80" . 
 
-<http://example.com/CSE-CIC-IDS2018/fluxo_8> rdf:type :fluxo; 
+<http://purl.org/CSE-CIC-IDS2018/fluxo_8> rdf:type :fluxo; 
                                            ex:hasFlowID "172.31.69.25-52.14.136.135-80-50822-6" ;
                                            ex:hasTimestamp "20/02/2018 10:13:54" ;
                                            ex:hasDuration "556" ;
@@ -614,9 +614,9 @@ net:Device rdf:type owl:Class;
                                            ex:hasAckFlagCount "0" ;
                                            ex:hasDownUpRatio "1" ;
                                            ex:hasActiveMean "0" ;
-                                           ex:hasPackets <http://example.com/CSE-CIC-IDS2018/pacote_8> ;
-                                           ex:hasLink <http://example.com/CSE-CIC-IDS2018/link_8> ;
-                                           ex:hasOccurrence <http://example.com/CSE-CIC-IDS2018/ocorrencia_ddos> .
+                                           ex:hasPackets <http://purl.org/CSE-CIC-IDS2018/pacote_8> ;
+                                           ex:hasLink <http://purl.org/CSE-CIC-IDS2018/link_8> ;
+                                           ex:hasOccurrence <http://purl.org/CSE-CIC-IDS2018/ocorrencia_ddos> .
  
                                 
                                            
@@ -627,5 +627,6 @@ net:Device rdf:type owl:Class;
                                           
                                            
                   
+
 
 
